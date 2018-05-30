@@ -1,13 +1,9 @@
 import React from 'react';
 
-const CreatureBlock = (props) => {
+const CreatureBlock = props => {
   const { creature } = props;
-  
-  return (
-  <div>
-    {creature.name}
-  </div>
-  );
-}
+
+  return <div>{creature.name}</div>;
+};
 
 export default CreatureBlock;
