@@ -1,0 +1,13 @@
+.property-block h4,
+.property-block p{
+  font-size: 13.5px;
+  line-height: 1.2em;
+  display: inline;
+  margin: 0;
+}
+.property-block h4{
+  font-style: italic;
+}
+.property-block{
+  padding: 10px 2px 0;
+}

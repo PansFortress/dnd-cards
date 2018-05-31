@@ -14,7 +14,14 @@ const TopStatsBlock = props => {
     constitution,
     intelligence,
     wisdom,
-    charisma
+    charisma,
+    damage_immunities,
+    damage_resistances,
+    damage_vulnerabilities,
+    condition_immunities,
+    senses,
+    languages,
+    challenge_rating
   } = props.data;
   const hitDetails = `${hit_points} (${hit_dice})`;
 
@@ -36,6 +43,33 @@ const TopStatsBlock = props => {
         wisdom={wisdom}
         charisma={charisma}
       />
+      <TaperedRule />
+      <PropertyLine title="Senses" details={senses} position="first" />
+      {damage_vulnerabilities && (
+        <PropertyLine
+          title="Damage Vulnerabilities"
+          details={damage_vulnerabilities}
+        />
+      )}
+      {damage_resistances && (
+        <PropertyLine title="Damage Resistances" details={damage_resistances} />
+      )}
+      {damage_immunities && (
+        <PropertyLine title="Damage Immunities" details={damage_immunities} />
+      )}
+      {condition_immunities && (
+        <PropertyLine
+          title="Condition Immunities"
+          details={condition_immunities}
+        />
+      )}
+      <PropertyLine title="Languages" details={languages} />
+      <PropertyLine
+        title="Challenge"
+        details={challenge_rating}
+        position="last"
+      />
+      <TaperedRule />
     </div>
   );
 };

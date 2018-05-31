@@ -44,3 +44,16 @@
           margin: 0;
       }
   }
+
+  @media print {
+    .stat-block{
+      margin:0;
+      padding:0;
+      box-shadow: none;
+      border: 3px solid black;
+    }
+    .section-right .section-left{
+      padding:0;
+      margin: 0;
+    }
+  }
