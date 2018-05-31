@@ -2,6 +2,7 @@ import React from 'react';
 import PropertyLine from '../PropertyLine';
 import TaperedRule from '../TaperedRule';
 import Abilities from '../Abilities';
+import {getXP} from '../../utils';
 
 const TopStatsBlock = props => {
   const {
@@ -31,6 +32,7 @@ const TopStatsBlock = props => {
     skills
   } = props.data;
   const hitDetails = `${hit_points} (${hit_dice})`;
+  const challengeRating = `${challenge_rating} (${getXP(challenge_rating)}XP)`;
   const savingThrows =
     (strength_save ? `Str +${strength_save} ` : '') +
     (dexterity_save ? `Dex +${dexterity_save} ` : '') +
@@ -84,7 +86,7 @@ const TopStatsBlock = props => {
       <PropertyLine title="Languages" details={languages} />
       <PropertyLine
         title="Challenge"
-        details={challenge_rating}
+        details={challengeRating}
         position="last"
       />
       <TaperedRule />
