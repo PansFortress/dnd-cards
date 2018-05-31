@@ -35,12 +35,12 @@ const TopStatsBlock = props => {
   const hitDetails = `${hit_points} (${hit_dice})`;
   const challengeRating = `${challenge_rating} (${getXP(challenge_rating)}XP)`;
   const savingThrows =
-    (strength_save ? `Str +${strength_save} ` : '') +
-    (dexterity_save ? `Dex +${dexterity_save} ` : '') +
-    (constitution_save ? `Con +${constitution_save} ` : '') +
-    (intelligence_save ? `Int +${intelligence_save} ` : '') +
-    (wisdom_save ? `Wis +${wisdom_save} ` : '') +
-    (charisma_save ? `Cha +${charisma_save} ` : '');
+    (strength_save || strength_save === 0 ? `Str +${strength_save} ` : '') +
+    (dexterity_save || dexterity_save === 0 ? `Dex +${dexterity_save} ` : '') +
+    (constitution_save || constitution_save === 0 ? `Con +${constitution_save} ` : '') +
+    (intelligence_save || intelligence_save === 0 ? `Int +${intelligence_save} ` : '') +
+    (wisdom_save || wisdom_save === 0 ? `Wis +${wisdom_save} ` : '') +
+    (charisma_save || charisma_save === 0 ? `Cha +${charisma_save} ` : '');
 
   return (
     <div className="top-stats">
