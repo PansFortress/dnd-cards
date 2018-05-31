@@ -21,9 +21,23 @@ const TopStatsBlock = props => {
     condition_immunities,
     senses,
     languages,
-    challenge_rating
+    challenge_rating,
+    strength_save,
+    intelligence_save,
+    wisdom_save,
+    dexterity_save,
+    charisma_save,
+    constitution_save,
+    skills
   } = props.data;
   const hitDetails = `${hit_points} (${hit_dice})`;
+  const savingThrows =
+    (strength_save ? `Str +${strength_save} ` : '') +
+    (dexterity_save ? `Dex +${dexterity_save} ` : '') +
+    (constitution_save ? `Con +${constitution_save} ` : '') +
+    (intelligence_save ? `Int +${intelligence_save} ` : '') +
+    (wisdom_save ? `Wis +${wisdom_save} ` : '') +
+    (charisma_save ? `Cha +${charisma_save} ` : '');
 
   return (
     <div className="top-stats">
@@ -45,6 +59,10 @@ const TopStatsBlock = props => {
       />
       <TaperedRule />
       <PropertyLine title="Senses" details={senses} position="first" />
+      {skills && <PropertyLine title="Skills" details={skills} />}
+      {savingThrows && (
+        <PropertyLine title="Saving Throws" details={savingThrows} />
+      )}
       {damage_vulnerabilities && (
         <PropertyLine
           title="Damage Vulnerabilities"
