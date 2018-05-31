@@ -39,6 +39,7 @@
       }
       .stat-block.wide .section-left{
         margin: 0;
+        border-right: none; 
       }
       .stat-block.wide .section-right{
           margin: 0;

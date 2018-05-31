@@ -2,7 +2,7 @@ import React from 'react';
 import PropertyLine from '../PropertyLine';
 import TaperedRule from '../TaperedRule';
 import Abilities from '../Abilities';
-import {getXP} from '../../utils';
+import { getXP } from '../../utils';
 
 const TopStatsBlock = props => {
   const {
@@ -31,6 +31,7 @@ const TopStatsBlock = props => {
     constitution_save,
     skills
   } = props.data;
+
   const hitDetails = `${hit_points} (${hit_dice})`;
   const challengeRating = `${challenge_rating} (${getXP(challenge_rating)}XP)`;
   const savingThrows =

@@ -22,3 +22,10 @@
 .property-line.last{
   margin: 0 0 10px;
 }
+
+@media print {
+  .property-line h4,
+  .property-line p {
+    color: black;
+  }
+}
