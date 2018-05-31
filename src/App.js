@@ -3,6 +3,7 @@ import CreatureBlock from './components/CreatureBlock';
 import data from './api/stub.json';
 import './App.css';
 
+//TODO: Need to create blocks for Strahd Zombie, Izek Strazni, Wereraven
 class App extends Component {
   render() {
     return (
