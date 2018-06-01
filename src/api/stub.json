@@ -1,8 +1,101 @@
 [ {
+  "name": "Theodore Artin",
+  "size": "Medium",
+  "type": "Humanoid (human)",
+  "alignment": "neutral good",
+  "armor_class": "11 (leather armor)",
+  "hit_points": 30,
+  "hit_dice": "5d8",
+  "speed": "30 ft.",
+  "strength": 15,
+  "dexterity": 11,
+  "constitution": 14,
+  "intelligence": 10,
+  "subtype":"",
+  "wisdom": 10,
+  "charisma": 11,
+  "senses": "passive Perception 10",
+  "languages": "Common",
+  "challenge_rating": "1/2",
+  "special_abilities": [
+    {
+      "name": "Trader",
+      "desc": "Spend time working to acquire goods costing up to 100GP in the PHB to sell to creatures for 5x. Discount changes at higher levels."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mace",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one creature.\nHit 5 (1d6+2) bludgeoning damage.",
+      "attack_bonus": 0
+    },
+    {
+      "name": "Heavy Crossbow",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 100/400, one target. \nHit 5 (1d10) piercing damage."
+    }
+  ],
+  "legendary_actions":[
+    {
+      "name": "Smithing / Apothecary  (1/Day)",
+      "desc": "\nPrerequisite: Space with work material for the task\n\nCraft an item by reducing the cost of the item by 10GP. The item is complete once there is no more cost to reduce by. Players can assist each day by reducing the cost by 5GP as long as they are proficient with the requisite tools and are Working Together in the same place.",
+      "attack_bonus": 0
+    },
+    {
+      "name": "Mercenary (1/Day)",
+      "desc": "Roll 1d100 to gain income on a day's worth of work as a mercenary:\n\n * 1-5: Misfortunes occur on the job. You die.\n* 6-35: Gain 5d6 CP\n* 36-65: Gain 4d6 SP\n * 66-75: Gain 3d6 EP\n * 76-99: Gain 3d6 GP\n * 100: Gain 1d6 PP",
+      "attack_bonus": 0
+    }
+  ]
+  },
+  {
+  "name": "Izek Strazni",
+  "size": "Medium",
+  "type": "Humanoid (human)",
+  "subtype":"",
+  "alignment": "neutral evil",
+  "armor_class": "14 (studded leather armor)",
+  "hit_points": 112,
+  "hit_dice": "15d8",
+  "speed": "30 ft.",
+  "strength": 18,
+  "dexterity": 15,
+  "constitution": 16,
+  "intelligence": 10,
+  "wisdom": 9,
+  "charisma": 15,
+  "intimidation": 8,
+  "perception": 2,
+  "languages": "Common (can't speak in raven form)",
+  "challenge_rating": "5",
+  "special_abilities": [
+    {
+      "name": "Brute",
+      "desc": "A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack).",
+      "attack_bonus": 0
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Izek makes two attacks with his battleaxe.",
+      "attack_bonus": 0
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. \nHit 13 (2d8+4) slashing damage, or 15 (2d10+4) when used with two hands."
+    },
+    {
+      "name": "Hurl Flame",
+      "desc": "Ranged Spell Attack: +5 to hit, range 60 ft., one target. \nHit 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
+    }
+  ]
+  },
+  {
   "name": "Wereraven",
   "size": "Medium",
   "type": "Humanoid (human, shapechanger)",
   "alignment": "lawful good",
+  "subtype":"",
   "armor_class": "12",
   "hit_points": 31,
   "hit_dice": "7d8",
@@ -38,15 +131,15 @@
     },
     {
       "name": "Beak (Raven or Hybrid Form Only)",
-      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage in raven form, or 4 (1d4+2) piercing damage in hybrid form. If the target is humanoid, it must succeed on a DC 10 Constitution saving throw or be cursed with wereraven lycanthropy."
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. \nHit 1 piercing damage in raven form, or 4 (1d4+2) piercing damage in hybrid form. If the target is humanoid, it must succeed on a DC 10 Constitution saving throw or be cursed with wereraven lycanthropy."
     },
     {
       "name": "Shortsword (Humanoid or Hybrid Form Only)",
-      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. \nHit 5 (1d6+2) piercing damage."
     },
     {
     "name":"Hand Crossbow (Humanoid or Hybrid Form Only)",
-    "desc":"Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage."
+    "desc":"Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. \nHit 5 (1d6+2) piercing damage."
     }
   ]
   },
@@ -65,6 +158,7 @@
   "intelligence": 3,
   "wisdom": 6,
   "charisma": 5,
+  "subtype":"",
   "wisdom_save": 0,
   "damage_immunities": "poison",
   "condition_immunities": "poisoned",
@@ -86,11 +180,11 @@
     },
     {
       "name": "Bite",
-      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage."
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. \nHit 3 (1d4+1) piercing damage."
     },
     {
       "name": "Claw",
-      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage."
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. \nHit 4 (1d6+1) slashing damage."
     }
   ]
   }
@@ -102,7 +196,7 @@
   "alignment": "lawful evil",
   "armor_class": "16 (Natural Armor)",
   "hit_points": 144,
-  "hit_dice": "17d8 + 68",
+  "hit_dice": "17d8",
   "skills": "Perception +7, Stealth +9",
   "speed": "30 ft.",
   "strength": 18,
@@ -163,14 +257,14 @@
     },
     {
       "name": "Unarmed Strike (Vampire Form Only)",
-      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18).",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. \nHit 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18).",
       "attack_bonus": 9,
       "damage_dice": "1d8",
       "damage_bonus": 4
     },
     {
       "name": "Bite (Bat or Vampire Form Only)",
-      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control.",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. \nHit 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control.",
       "attack_bonus": 9,
       "damage_dice": "1d6 + 3d6",
       "damage_bonus": 4
@@ -257,12 +351,12 @@
       },
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. \nHit 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
         "attack_bonus": 61
       },
       {
         "name": "Claws",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (2d4 + 3) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape DC 13).",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. \nHit 8 (2d4 + 3) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape DC 13).",
         "attack_bonus": 6,
         "damage_dice": "2d4",
         "damage_bonus": 3
@@ -278,7 +372,7 @@
     "armor_class": "11 in humanoid form, 12 (natural armor) in wolf or hybrid form",
     "hit_points": 58,
     "skills": "Perception +4, Stealth +3",
-    "hit_dice": "9d8 + 18",
+    "hit_dice": "9d8",
     "speed": "30 ft. (40 ft. in wolf form)",
     "strength": 15,
     "dexterity": 13,
@@ -314,21 +408,21 @@
       },
       {
         "name": "Bite (Wolf or Hybrid Form Only)",
-        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. \nHit 6 (1d8 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.",
         "attack_bonus": 4,
         "damage_dice": "1d8",
         "damage_bonus": 2
       },
       {
         "name": "Claws (Hybrid Form Only)",
-        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) slashing damage.",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. \nHit 7 (2d4 + 2) slashing damage.",
         "attack_bonus": 4,
         "damage_dice": "2d4",
         "damage_bonus": 2
       },
       {
         "name": "Spear (Humanoid Form Only)",
-        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
+        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. \nHit 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 4,
         "damage_dice": "1d6",
         "damage_bonus": -2
@@ -361,7 +455,7 @@
     "actions": [
       {
         "name": "Club",
-        "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+        "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. \nHit 2 (1d4) bludgeoning damage.",
         "attack_bonus": 2,
         "damage_dice": "1d4"
       }
@@ -409,14 +503,14 @@
       },
       {
         "name": "Shortsword",
-        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. \nHit 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
         "damage_dice": "1d6",
         "damage_bonus": 2
       },
       {
         "name": "Longbow",
-        "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+        "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. \nHit 6 (1d8 + 2) piercing damage.",
         "attack_bonus": 4,
         "damage_dice": "1d8",
         "damage_bonus": 2
@@ -449,14 +543,14 @@
     "actions": [
       {
         "name": "Scimitar",
-        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. \nHit 4 (1d6 + 1) slashing damage.",
         "attack_bonus": 3,
         "damage_dice": "1d6",
         "damage_bonus": 1
       },
       {
         "name": "Light Crossbow",
-        "desc": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+        "desc": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. \nHit 5 (1d8 + 1) piercing damage.",
         "attack_bonus": 3,
         "damage_dice": "1d8",
         "damage_bonus": 1
@@ -497,7 +591,7 @@
     "actions": [
       {
         "name": "Slam",
-        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. \nHit 4 (1d6 + 1) bludgeoning damage.",
         "attack_bonus": 3,
         "damage_dice": "1d6",
         "damage_bonus": 1
@@ -537,7 +631,7 @@
     "actions": [
       {
         "name": "Greataxe",
-        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. \nHit 9 (1d12 + 3) slashing damage.",
         "attack_bonus": 5,
         "damage_dice": "1d12",
         "damage_bonus": 3
@@ -584,7 +678,7 @@
     "actions": [
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. \nHit 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
         "attack_bonus": 5,
         "damage_dice": "2d6",
         "damage_bonus": 3
@@ -639,7 +733,7 @@
     "actions": [
       {
         "name": "Shock",
-        "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning damage.",
+        "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. \nHit 9 (2d8) lightning damage.",
         "attack_bonus": 4,
         "damage_dice": "2d8"
       },
@@ -712,7 +806,7 @@
     "actions": [
       {
         "name": "Claws (Hag Form Only)",
-        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. \nHit 13 (2d8 + 4) slashing damage.",
         "attack_bonus": 7,
         "damage_dice": "2d8",
         "damage_bonus": 4
@@ -760,14 +854,14 @@
     "actions": [
       {
         "name": "Shortsword",
-        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. \nHit 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
         "damage_dice": "1d6",
         "damage_bonus": 2
       },
       {
         "name": "Shortbow",
-        "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. \nHit 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
         "damage_dice": "1d6",
         "damage_bonus": 2

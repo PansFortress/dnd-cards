@@ -2,7 +2,7 @@ import React from 'react';
 import PropertyLine from '../PropertyLine';
 import TaperedRule from '../TaperedRule';
 import Abilities from '../Abilities';
-import { getXP } from '../../utils';
+import { getXP, getModifier } from '../../utils';
 
 const TopStatsBlock = props => {
   const {
@@ -49,7 +49,12 @@ const TopStatsBlock = props => {
     persuasion
   } = props.data;
 
-  const hitDetails = `${hit_points} (${hit_dice})`;
+  const getHitModifier = () => {
+    const hitQuant = hit_dice.slice(0, hit_dice.indexOf('d'));
+    return hitQuant * getModifier(constitution);
+  };
+
+  const hitDetails = `${hit_points} (${hit_dice} +${getHitModifier()})`;
   const challengeRating = `${challenge_rating} (${getXP(challenge_rating)}XP)`;
   const savingThrows =
     (strength_save || strength_save === 0 ? `Str +${strength_save} ` : '') +
