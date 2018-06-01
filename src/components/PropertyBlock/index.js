@@ -6,7 +6,7 @@ const PropertyBlock = props => {
   return (
     <div className="property-block">
       <h4>{name}. </h4>
-      <p>{desc}</p>
+      <pre>{desc}</pre>
     </div>
   );
 };

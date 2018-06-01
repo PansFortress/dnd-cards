@@ -1,9 +1,10 @@
 .property-block h4,
-.property-block p{
+.property-block pre{
   font-size: 13.5px;
   line-height: 1.2em;
   display: inline;
   margin: 0;
+  white-space: pre-line;
 }
 .property-block h4{
   font-style: italic;

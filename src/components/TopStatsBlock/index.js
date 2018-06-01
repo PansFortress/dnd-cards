@@ -29,7 +29,24 @@ const TopStatsBlock = props => {
     dexterity_save,
     charisma_save,
     constitution_save,
-    skills
+    athletics,
+    acrobatics,
+    sleight_of_hand,
+    stealth,
+    arcana,
+    history,
+    investigation,
+    nature,
+    religion,
+    animal_handling,
+    insight,
+    medicine,
+    perception,
+    survival,
+    deception,
+    intimidation,
+    performance,
+    persuasion
   } = props.data;
 
   const hitDetails = `${hit_points} (${hit_dice})`;
@@ -45,6 +62,26 @@ const TopStatsBlock = props => {
       : '') +
     (wisdom_save || wisdom_save === 0 ? `Wis +${wisdom_save} ` : '') +
     (charisma_save || charisma_save === 0 ? `Cha +${charisma_save} ` : '');
+
+  const skills =
+    (athletics ? `Athletics +${athletics} ` : '') +
+    (acrobatics ? `Acrobatics + ${acrobatics} ` : '') +
+    (sleight_of_hand ? `Sleight of Hand +${sleight_of_hand} ` : '') +
+    (stealth ? `Stealth +${stealth} ` : '') +
+    (arcana ? `Arcana +${arcana} ` : '') +
+    (history ? `History +${history} ` : '') +
+    (investigation ? `Investigation +${investigation} ` : '') +
+    (nature ? `Nature +${nature} ` : '') +
+    (religion ? `Religion +${religion} ` : '') +
+    (animal_handling ? `Animal Handling +${animal_handling} ` : '') +
+    (insight ? `Insight +${insight} ` : '') +
+    (medicine ? `Medicine +${medicine} ` : '') +
+    (perception ? `Perception +${perception} ` : '') +
+    (survival ? `Survival +${survival} ` : '') +
+    (deception ? `Deception +${deception} ` : '') +
+    (intimidation ? `Intimidation +${intimidation} ` : '') +
+    (performance ? `Performance +${performance} ` : '') +
+    (persuasion ? `Persuasion ` : '');
 
   return (
     <div className="top-stats">
