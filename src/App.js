@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CreatureBlock from './components/CreatureBlock';
-import CREATURE_DATA from './api/full.json';
+import CREATURE_DATA from './api/npc.json';
 import './App.css';
 
 class App extends Component {
