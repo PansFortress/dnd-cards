@@ -1,0 +1,49 @@
+[{
+  "name": "Theodore Artin",
+  "size": "Medium",
+  "type": "Humanoid (human)",
+  "alignment": "neutral good",
+  "armor_class": "11 (leather armor)",
+  "hit_points": 30,
+  "hit_dice": "5d8",
+  "speed": "30 ft.",
+  "strength": 15,
+  "dexterity": 11,
+  "constitution": 14,
+  "intelligence": 10,
+  "subtype":"",
+  "wisdom": 10,
+  "charisma": 11,
+  "senses": "passive Perception 10",
+  "languages": "Common",
+  "challenge_rating": "1/2",
+  "special_abilities": [
+    {
+      "name": "Trader",
+      "desc": "Spend time working to acquire goods costing up to 100GP in the PHB to sell to creatures for 5x. Discount changes at higher levels."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mace",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one creature.\nHit 5 (1d6+2) bludgeoning damage.",
+      "attack_bonus": 0
+    },
+    {
+      "name": "Heavy Crossbow",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 100/400, one target. \nHit 5 (1d10) piercing damage."
+    }
+  ],
+  "legendary_actions":[
+    {
+      "name": "Smithing / Apothecary  (1/Day)",
+      "desc": "\nPrerequisite: Space with work material for the task\n\nCraft an item by reducing the cost of the item by 10GP. The item is complete once there is no more cost to reduce by. Players can assist each day by reducing the cost by 5GP as long as they are proficient with the requisite tools and are Working Together in the same place.",
+      "attack_bonus": 0
+    },
+    {
+      "name": "Mercenary (1/Day)",
+      "desc": "Roll 1d100 to gain income on a day's worth of work as a mercenary:\n\n * 1-5: Misfortunes occur on the job. You die.\n* 6-35: Gain 5d6 CP\n* 36-65: Gain 4d6 SP\n * 66-75: Gain 3d6 EP\n * 76-99: Gain 3d6 GP\n * 100: Gain 1d6 PP",
+      "attack_bonus": 0
+    }
+  ]
+  }]

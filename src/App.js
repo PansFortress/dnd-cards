@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import CreatureBlock from './components/CreatureBlock';
-import SpellBlock from './components/SpellBlock';
-import CREATURE_DATA from './api/stub.json';
-import SPELL_DATA from './api/spell.json';
+import CREATURE_DATA from './api/npc.json';
 import './App.css';
 
-//TODO: Need to create blocks for Strahd Zombie, Izek Strazni, Wereraven
 class App extends Component {
   render() {
     return (
