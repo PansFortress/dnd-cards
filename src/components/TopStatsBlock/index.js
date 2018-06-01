@@ -37,20 +37,20 @@ const TopStatsBlock = props => {
   const savingThrows =
     (strength_save || strength_save === 0 ? `Str +${strength_save} ` : '') +
     (dexterity_save || dexterity_save === 0 ? `Dex +${dexterity_save} ` : '') +
-    (constitution_save || constitution_save === 0 ? `Con +${constitution_save} ` : '') +
-    (intelligence_save || intelligence_save === 0 ? `Int +${intelligence_save} ` : '') +
+    (constitution_save || constitution_save === 0
+      ? `Con +${constitution_save} `
+      : '') +
+    (intelligence_save || intelligence_save === 0
+      ? `Int +${intelligence_save} `
+      : '') +
     (wisdom_save || wisdom_save === 0 ? `Wis +${wisdom_save} ` : '') +
     (charisma_save || charisma_save === 0 ? `Cha +${charisma_save} ` : '');
 
   return (
     <div className="top-stats">
-      <PropertyLine
-        title="Armor Class"
-        details={armor_class}
-        position="first"
-      />
-      <PropertyLine title="Hit Points" details={hitDetails} />
-      <PropertyLine title="Speed" details={speed} position="last" />
+      <PropertyLine name="Armor Class" desc={armor_class} position="first" />
+      <PropertyLine name="Hit Points" desc={hitDetails} />
+      <PropertyLine name="Speed" desc={speed} position="last" />
       <TaperedRule />
       <Abilities
         strength={strength}
@@ -61,35 +61,28 @@ const TopStatsBlock = props => {
         charisma={charisma}
       />
       <TaperedRule />
-      <PropertyLine title="Senses" details={senses} position="first" />
-      {skills && <PropertyLine title="Skills" details={skills} />}
+      <PropertyLine name="Senses" desc={senses} position="first" />
+      {skills && <PropertyLine name="Skills" desc={skills} />}
       {savingThrows && (
-        <PropertyLine title="Saving Throws" details={savingThrows} />
+        <PropertyLine name="Saving Throws" desc={savingThrows} />
       )}
       {damage_vulnerabilities && (
         <PropertyLine
-          title="Damage Vulnerabilities"
-          details={damage_vulnerabilities}
+          name="Damage Vulnerabilities"
+          desc={damage_vulnerabilities}
         />
       )}
       {damage_resistances && (
-        <PropertyLine title="Damage Resistances" details={damage_resistances} />
+        <PropertyLine name="Damage Resistances" desc={damage_resistances} />
       )}
       {damage_immunities && (
-        <PropertyLine title="Damage Immunities" details={damage_immunities} />
+        <PropertyLine name="Damage Immunities" desc={damage_immunities} />
       )}
       {condition_immunities && (
-        <PropertyLine
-          title="Condition Immunities"
-          details={condition_immunities}
-        />
+        <PropertyLine name="Condition Immunities" desc={condition_immunities} />
       )}
-      <PropertyLine title="Languages" details={languages} />
-      <PropertyLine
-        title="Challenge"
-        details={challengeRating}
-        position="last"
-      />
+      <PropertyLine name="Languages" desc={languages} />
+      <PropertyLine name="Challenge" desc={challengeRating} position="last" />
       <TaperedRule />
     </div>
   );

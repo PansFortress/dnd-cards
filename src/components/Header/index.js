@@ -2,15 +2,12 @@ import React from 'react';
 import './styles.css';
 
 const Header = props => {
-  const { name, size, type, subtype, alignment } = props.data;
-  const cType = `${size} ${type} ${subtype}`.trim();
+  const { header, subheader, color } = props;
 
   return (
-    <div className="creature-heading">
-      <h1>{name}</h1>
-      <h2>
-        {cType}, {alignment}
-      </h2>
+    <div className={['creature-heading', color].join(' ')}>
+      <h1>{header}</h1>
+      {subheader && <h2>{subheader}</h2>}
     </div>
   );
 };

@@ -8,7 +8,9 @@
     font-variant: small-caps;
     font-weight: bold;
   }
-  
+.creature-heading.blue h1{
+  color: #4c70ad;
+}  
   .creature-heading h2{
     font-weight: normal;
     font-style: italic;

@@ -12,7 +12,7 @@
   .spell-block.wide{
     width: 46.5%;
     min-width: 560px;
-    text-align: center;
+    text-align: left;
   }
   .spell-block.wide .section-left,
   .spell-block.wide .section-right{

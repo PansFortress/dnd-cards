@@ -8,11 +8,14 @@ import './styles.css';
 
 const CreatureBlock = props => {
   const { data } = props;
+  const { name, size, type, subtype, alignment } = data;
+  const header = name;
+  const subheader = `${size} ${type} ${subtype}`.trim() + `, ${alignment}`;
 
   return (
     <div className="stat-block wide">
       <div className="section-left">
-        <Header data={data} />
+        <Header header={header} subheader={subheader} />
         <TaperedRule />
         <TopStatsBlock data={data} />
         {data.special_abilities && (
