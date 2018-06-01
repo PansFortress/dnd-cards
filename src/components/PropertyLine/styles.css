@@ -6,8 +6,10 @@
   font-size: 13.5px;
   line-height: 1.2em;
 }
-.property-line h4{
-  color: #7A200D;
+
+.property-line.blue h4,
+.property-line.blue p{
+  color: #001293;
 }
 .property-line{
   text-indent: -1em;
